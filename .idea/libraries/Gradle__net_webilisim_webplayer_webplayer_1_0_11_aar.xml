@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: net.webilisim.webplayer:webplayer:1.0.11@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2b7569a4bbcc197e8be582f720a7e894/transformed/jetified-webplayer-1.0.11/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b7569a4bbcc197e8be582f720a7e894/transformed/jetified-webplayer-1.0.11/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b7569a4bbcc197e8be582f720a7e894/transformed/jetified-webplayer-1.0.11/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.webilisim.webplayer/webplayer/1.0.11/510ff9f1809613d0b188cf3037e062ded602f4cc/webplayer-1.0.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.webilisim.webplayer/webplayer/1.0.11/4e36a5a3046fa6d7bc7909716e6f8339cad86d1d/webplayer-1.0.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

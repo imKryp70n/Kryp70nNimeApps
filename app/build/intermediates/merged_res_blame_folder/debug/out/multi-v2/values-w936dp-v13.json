@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.kryp70nnime.apps.app-mergeDebugResources-63:/values-w936dp-v13/values-w936dp-v13.xml",
+            "map": [
+                {
+                    "source": "G:\\Kryp70nNime\\Kryp70n\\movie-app-java-master\\app\\src\\main\\res\\values-w936dp\\dimens.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "59",
+                        "endOffsets": "71"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "59",
+                        "endOffsets": "110"
+                    }
+                }
+            ]
+        }
+    ]
+}

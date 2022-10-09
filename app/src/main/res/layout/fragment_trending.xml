@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.Activity.dashboard.Fragment.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/bg"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/appName"
+                    android:textColor="@color/material_blue"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchViewAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/rounded_searchbar"
+                    app:queryHint="Search Movie" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <TextView
+                android:id="@+id/trendingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Top Anime Trending"
+                android:textColor="@color/material_blue" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/animeTrendingRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trendingText"
+                android:scrollbars="horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

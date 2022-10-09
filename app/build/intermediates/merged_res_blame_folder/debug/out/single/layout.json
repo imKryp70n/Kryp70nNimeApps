@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\item_episode_anime.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\item_episode_anime.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_episodes.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_episodes.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\popup_welcome.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\popup_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\activity_anime_list.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\activity_anime_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\activity_detail_anime.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\activity_detail_anime.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\custom_control.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\custom_control.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "com.kryp70nnime.apps.app-mergeDebugResources-64:/layout/activity_watch_anime.xml",
+        "source": "com.kryp70nnime.apps.app-main-67:/layout/activity_watch_anime.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\movie_list.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\movie_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\track_selection_dialog.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\track_selection_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_information.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_information.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_trending.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_trending.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\item_anime_list.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\item_anime_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\activity_about_me.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\activity_about_me.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\item_bookmark.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\item_bookmark.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\nav_header_about.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\nav_header_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\activity_terms_contition.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\activity_terms_contition.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\activity_watch_anime.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\activity_watch_anime.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_reflow.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_reflow.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_setting.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_slideshow.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_search_anime.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_search_anime.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\fragment_bookmark.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\fragment_bookmark.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-mergeDebugResources-64:\\layout\\not_found.xml",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\not_found.xml"
+    }
+]

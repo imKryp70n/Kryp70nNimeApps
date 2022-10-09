@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_blue">#2196F3</color>
+    <color name="dotsBg">#192196F3</color>
+    <color name="gray">#F59F9F9F</color>
+    <color name="dots_half">#802196F3</color>
+    <color name="material_red">#EC7474</color>
+    <color name="light_white">#FCFCFC</color>
+    <color name="dark">#0E121A</color>
+    <color name="light_dark">#171C26</color>
+    <color name="black_bold_text">#4F565E</color>
+    <color name="black_regular_text">#888F96</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_bold_text">#FCFCFC</color>
+    <color name="white_regular_text">#F2F5F6</color>
+
+    <attr name="card" format="color" />
+    <attr name="bg" format="color" />
+    <attr name="boldText" format="color" />
+    <attr name="regularText" format="color" />
+    <attr name="appbar" format="color" />
+    <attr name="appbarAttribute" format="color" />
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

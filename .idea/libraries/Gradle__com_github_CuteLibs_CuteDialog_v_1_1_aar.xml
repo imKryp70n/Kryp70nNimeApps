@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.CuteLibs:CuteDialog:v-1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9ae17eb79ab767f1cc8b8a04ebf14028/transformed/jetified-CuteDialog-v-1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ae17eb79ab767f1cc8b8a04ebf14028/transformed/jetified-CuteDialog-v-1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ae17eb79ab767f1cc8b8a04ebf14028/transformed/jetified-CuteDialog-v-1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CuteLibs/CuteDialog/v-1.1/4c1a4ea9d03db0055c7134dd83b1fd6ec79a1ab0/CuteDialog-v-1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CuteLibs/CuteDialog/v-1.1/ff18291ed15bdf3838f643df6a0bdda2c32db81c/CuteDialog-v-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.exoplayer:extension-cast:2.10.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c3ed6a094000791b0412bf00174c57af/transformed/jetified-extension-cast-2.10.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c3ed6a094000791b0412bf00174c57af/transformed/jetified-extension-cast-2.10.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c3ed6a094000791b0412bf00174c57af/transformed/jetified-extension-cast-2.10.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-cast/2.10.3/90dd2fbe5388c074ba5569f263df12944be5673c/extension-cast-2.10.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-cast/2.10.3/25bd92c9f1c603662c51beff46cb197859422f6b/extension-cast-2.10.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

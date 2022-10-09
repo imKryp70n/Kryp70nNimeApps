@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.derohimat:sweet-alert-dialog:2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e62f94f1cc93f42e7e603a37a6483e38/transformed/jetified-sweet-alert-dialog-2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e62f94f1cc93f42e7e603a37a6483e38/transformed/jetified-sweet-alert-dialog-2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e62f94f1cc93f42e7e603a37a6483e38/transformed/jetified-sweet-alert-dialog-2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.derohimat/sweet-alert-dialog/2.0/678fe6d08e27a3968069c640194bc52e0a3deeba/sweet-alert-dialog-2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

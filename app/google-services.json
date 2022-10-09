@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "646561463700",
+    "project_id": "kryp70nnime",
+    "storage_bucket": "kryp70nnime.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646561463700:android:642c60914719fb5c09a381",
+        "android_client_info": {
+          "package_name": "com.kryp70nnime.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646561463700-qup3u8v204grounj74m8kujbu97qrr0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFuXChKAnzMOSHpDaykTpVu5mp0tkLMUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646561463700-qup3u8v204grounj74m8kujbu97qrr0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

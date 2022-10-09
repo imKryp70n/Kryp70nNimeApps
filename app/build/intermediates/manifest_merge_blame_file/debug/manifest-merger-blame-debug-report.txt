@@ -1,0 +1,252 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kryp70nnime.apps"
+4    android:versionCode="1"
+5    android:versionName="24.08.2022" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="25"
+8-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:6:5-67
+11-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:7:5-79
+12-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+13-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:8:5-78
+13-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:8:22-75
+14
+15    <queries>
+15-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:14:5-22:15
+16        <intent>
+16-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:15:9-21:18
+17            <action android:name="android.intent.action.VIEW" />
+17-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:16:13-65
+17-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:16:21-62
+18
+19            <category android:name="android.intent.category.BROWSABLE" />
+19-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:18:13-74
+19-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:18:23-71
+20
+21            <data android:scheme="https" />
+21-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:42:17-63
+21-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:42:23-60
+22        </intent>
+23        <intent>
+23-->[androidx.media:media:1.3.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\0269d51173451d2ab856ed75c8bdf8e8\transformed\media-1.3.1\AndroidManifest.xml:25:9-27:18
+24            <action android:name="android.media.browse.MediaBrowserService" />
+24-->[androidx.media:media:1.3.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\0269d51173451d2ab856ed75c8bdf8e8\transformed\media-1.3.1\AndroidManifest.xml:26:13-79
+24-->[androidx.media:media:1.3.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\0269d51173451d2ab856ed75c8bdf8e8\transformed\media-1.3.1\AndroidManifest.xml:26:21-76
+25        </intent>
+26    </queries> <!-- This permission is required to start foreground services in Android P. -->
+27    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+27-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:7:5-77
+27-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:7:22-74
+28
+29    <application
+29-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:11:5-54:19
+30        android:allowBackup="true"
+30-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:12:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\cd33f26b4f6a5be75c2c675ec5e179dc\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:extractNativeLibs="false"
+34        android:icon="@drawable/icon"
+34-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:13:9-38
+35        android:label="@string/app_name"
+35-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:14:9-41
+36        android:networkSecurityConfig="@xml/network_security_config"
+36-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:15:9-69
+37        android:roundIcon="@drawable/icon_rounded"
+37-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:16:9-51
+38        android:supportsRtl="true"
+38-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:18:9-35
+39        android:testOnly="true"
+40        android:theme="@style/Theme.Movieku"
+40-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:19:9-45
+41        android:usesCleartextTraffic="true" >
+41-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:20:9-44
+42        <activity
+42-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:21:9-23:40
+43            android:name="com.kryp70nnime.apps.Ui.Activity.About.AboutMeActivity"
+43-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:22:13-62
+44            android:exported="false" />
+44-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:23:13-37
+45        <activity
+45-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:24:9-26:40
+46            android:name="com.kryp70nnime.apps.Ui.Activity.dashboard.TermsContitionActivity"
+46-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:25:13-73
+47            android:exported="false" />
+47-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:26:13-37
+48        <activity
+48-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:27:9-31:40
+49            android:name="com.kryp70nnime.apps.Ui.Activity.Watch.WatchAnimeActivity"
+49-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:28:13-65
+50            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+50-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:30:13-122
+51            android:exported="false"
+51-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:31:13-37
+52            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+52-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:29:13-72
+53        <activity
+53-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:32:9-34:40
+54            android:name="com.kryp70nnime.apps.Ui.Activity.detail.DetailAnimeActivity"
+54-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:33:13-67
+55            android:exported="false" />
+55-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:34:13-37
+56        <activity
+56-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:35:9-44:20
+57            android:name="com.kryp70nnime.apps.Ui.Activity.dashboard.DashboardActivity"
+57-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:36:13-68
+58            android:exported="true" >
+58-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:37:13-36
+59            <intent-filter>
+59-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:38:13-43:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:39:17-69
+60-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:39:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:40:17-77
+62-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:40:27-74
+63                <!-- Update the auth0Scheme Manifest Placeholder on the app/build.gradle file or update the intent-filter declaration in the AndroidManifest.xml to use the new scheme. -->
+64                <data android:scheme="com.kryp70nnime.apps" />
+64-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:42:17-63
+64-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:42:23-60
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:45:9-53:20
+68            android:name="com.kryp70nnime.apps.Ui.Activity.splash.Splash"
+68-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:46:13-54
+69            android:exported="true" >
+69-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:47:13-36
+70            <intent-filter>
+70-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:48:13-52:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:39:17-69
+71-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:39:25-66
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:40:17-77
+73-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:40:27-74
+74            </intent-filter>
+75        </activity>
+76        <activity
+76-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:25:9-30:75
+77            android:name="com.auth0.android.provider.AuthenticationActivity"
+77-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:26:13-77
+78            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboard|keyboardHidden"
+78-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:27:13-115
+79            android:exported="false"
+79-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:28:13-37
+80            android:launchMode="singleTask"
+80-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:29:13-44
+81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+81-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:30:13-72
+82        <activity
+82-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:31:9-47:20
+83            android:name="com.auth0.android.provider.RedirectActivity"
+83-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:32:13-71
+84            android:exported="true" >
+84-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:33:13-36
+85            <intent-filter android:autoVerify="true" >
+85-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:34:13-46:29
+85-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:35:17-42
+86                <action android:name="android.intent.action.VIEW" />
+86-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:16:13-65
+86-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:16:21-62
+87
+88                <category android:name="android.intent.category.DEFAULT" />
+88-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:39:17-76
+88-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:39:27-73
+89                <category android:name="android.intent.category.BROWSABLE" />
+89-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:18:13-74
+89-->[com.auth0.android:auth0:2.8.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\58e5a2edf3dc22c492d0a85fb1f5089a\transformed\jetified-auth0-2.8.0\AndroidManifest.xml:18:23-71
+90
+91                <data
+91-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:42:17-63
+92                    android:host="dev-kh7kgb0v.us.auth0.com"
+93                    android:pathPrefix="/android/com.kryp70nnime.apps/callback"
+94                    android:scheme="https" />
+94-->G:\Kryp70nNime\Kryp70n\movie-app-java-master\app\src\main\AndroidManifest.xml:42:23-60
+95            </intent-filter>
+96        </activity>
+97
+98        <receiver
+98-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:10:9-12:40
+99            android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
+99-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:11:13-91
+100            android:exported="false" />
+100-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:12:13-37
+101
+102        <service
+102-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:14:9-16:40
+103            android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"
+103-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:15:13-96
+104            android:exported="false" />
+104-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:16:13-37
+105        <service
+105-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:17:9-19:40
+106            android:name="com.google.android.gms.cast.framework.ReconnectionService"
+106-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:18:13-85
+107            android:exported="false" />
+107-->[com.google.android.gms:play-services-cast-framework:16.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\ff55363a88f5e7ce1ac99fdf82479469\transformed\jetified-play-services-cast-framework-16.2.0\AndroidManifest.xml:19:13-37
+108
+109        <activity
+109-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\36dd2092988419281fd8fdf00d11b245\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+110            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+110-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\36dd2092988419281fd8fdf00d11b245\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\36dd2092988419281fd8fdf00d11b245\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+112-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\36dd2092988419281fd8fdf00d11b245\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+113
+114        <meta-data
+114-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\ecd6531538969af02a26cd7711ce3fbf\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+115            android:name="com.google.android.gms.version"
+115-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\ecd6531538969af02a26cd7711ce3fbf\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+116            android:value="@integer/google_play_services_version" />
+116-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\ecd6531538969af02a26cd7711ce3fbf\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+117
+118        <provider
+118-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\5e91b023516a338285bd49f27692db4f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+119            android:name="androidx.startup.InitializationProvider"
+119-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\5e91b023516a338285bd49f27692db4f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+120            android:authorities="com.kryp70nnime.apps.androidx-startup"
+120-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\5e91b023516a338285bd49f27692db4f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+121            android:exported="false" >
+121-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\5e91b023516a338285bd49f27692db4f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+122            <meta-data
+122-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\5e91b023516a338285bd49f27692db4f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+123                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+123-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\5e91b023516a338285bd49f27692db4f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+124                android:value="androidx.startup" />
+124-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\5e91b023516a338285bd49f27692db4f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+125            <meta-data
+125-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\60d66295239e7383db0bc717e0e4f288\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+126                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+126-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\60d66295239e7383db0bc717e0e4f288\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+127                android:value="androidx.startup" />
+127-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\AxxelXD\.gradle\caches\transforms-3\60d66295239e7383db0bc717e0e4f288\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+128        </provider>
+129
+130        <uses-library
+130-->[androidx.window:window:1.0.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\29a4a2635fe3ae7324fd4158242cc016\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+131            android:name="androidx.window.extensions"
+131-->[androidx.window:window:1.0.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\29a4a2635fe3ae7324fd4158242cc016\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+132            android:required="false" />
+132-->[androidx.window:window:1.0.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\29a4a2635fe3ae7324fd4158242cc016\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+133        <uses-library
+133-->[androidx.window:window:1.0.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\29a4a2635fe3ae7324fd4158242cc016\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+134            android:name="androidx.window.sidecar"
+134-->[androidx.window:window:1.0.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\29a4a2635fe3ae7324fd4158242cc016\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+135            android:required="false" />
+135-->[androidx.window:window:1.0.0] C:\Users\AxxelXD\.gradle\caches\transforms-3\29a4a2635fe3ae7324fd4158242cc016\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+136    </application>
+137
+138</manifest>

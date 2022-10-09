@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Kryp70nNime</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="appName" translatable="false">Kryp70nNime</string>
+    <string name="overview" translatable="false">Overview</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header" translatable="false">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
+
+    <string name="com_auth0_client_id">dev-kh7kgb0v.us.auth0.com</string>
+    <string name="com_auth0_domain">HdF1WaupDYNymQ4ZGsDURCzmL0TgBZf1</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title" translatable="false">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Popup -->
+    <string name="read_terms"> Before starting it would be nice if you read first the Terms and Conditions of this application, I really appreciate it if you read it, Thank you..</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+
+    <!-- Privacy Policy -->
+    <string name="privacy_policy" translatable="false">Privacy Policy</string>
+    <string name="privacy_policy_summary" translatable="false">Read our privacy policy</string>
+    <string name="privacy_policy_content">Privacy Policy imKryp70n built the Kryp70nNime app as a Free app. This SERVICE is provided by imKryp70n at no cost and is intended for use as is.  This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.  If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.  The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at Kryp70nNime unless otherwise defined in this Privacy Policy.</string>
+
+    <!--Terms and Condition-->
+    <string name="terms_and_condition" translatable="false">Terms and Condition</string>
+    <string name="terms_and_condition_summary" translatable="false">Read our terms and condition</string>
+    <string name="terms_and_condition_content" translatable="false">
+        By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages or make derivative versions. The app itself, and all the trademarks, copyright, database rights, and other intellectual property rights related to it, still belong to imKryp70n.
+        imKryp70n is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.
+        You should be aware that there are certain things that imKryp70n will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi or provided by your mobile network provider, but imKryp70n cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
+        If you’re using the app outside of an area with Wi-Fi, you should remember that the terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third-party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.
+        Along the same lines, imKryp70n cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, imKryp70n cannot accept responsibility.
+        With respect to imKryp70n’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavor to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. imKryp70n accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
+        At some point, we may wish to update the app. The app is currently available on Android – the requirements for the system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. imKryp70n does not promise that it will always update the app so that it is relevant to you and/or works with the Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.
+
+
+    </string>
+
+    <string name="terms_and_condition_pt2" translatable="false">I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.
+        These terms and conditions are effective as of 2022-09-24
+
+    </string>
+
+    <string name="terms_and_condition_pt3" translatable="false">
+If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at joemusicamv12@gmail.com.
+
+    </string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="track_selection_title">Video Quality</string>
+
+</resources>
