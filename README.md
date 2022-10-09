@@ -1,7 +1,6 @@
 <p align="center">
-<img alt="GitHub issues" src="https://i.ibb.co/kgQtwvT/Group-4-1.png">
-  </p>
-![Logo](https://i.ibb.co/kgQtwvT/Group-4-1.png)
+  <img alt="GitHub issues" src="https://i.ibb.co/kgQtwvT/Group-4-1.png">
+</p>
 
 
 
@@ -68,6 +67,7 @@ If you have any feedback, please reach out to us at joemusicamv12@gmail.com
 - [ ]   Complete Pagination
 - [ ]   Schedule
 - [ ]   Genre List
+- [ ]   Bookmark
   - [x]   Anime By Genre
 - [x]   Detail Anime
   - [x]   Detail
