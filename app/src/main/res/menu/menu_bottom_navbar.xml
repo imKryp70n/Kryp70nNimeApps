@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardBottom"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/trendingBottom"
+        android:icon="@drawable/ic_baseline_trending_up_24"
+        android:title="Trending" />
+    <item
+        android:id="@+id/jadwalBottom"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="Jadwal" />
+    <item
+        android:id="@+id/pengaturanBottom"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Pengaturan" />
+</menu>
