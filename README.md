@@ -1,5 +1,6 @@
-
+<p align="center">
 ![Logo](https://i.ibb.co/kgQtwvT/Group-4-1.png)
+</p>
 
 
 ## Authors
