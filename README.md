@@ -1,4 +1,6 @@
-
+<p align="center">
+<img alt="GitHub issues" src="https://i.ibb.co/kgQtwvT/Group-4-1.png">
+  </p>
 ![Logo](https://i.ibb.co/kgQtwvT/Group-4-1.png)
 
 
