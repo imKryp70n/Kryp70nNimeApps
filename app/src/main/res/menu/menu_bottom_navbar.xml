@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <item
         android:id="@+id/dashboardBottom"
+
         android:icon="@drawable/ic_baseline_dashboard_24"
         android:title="Dashboard" />
-    <item
+<!--    <item
         android:id="@+id/trendingBottom"
         android:icon="@drawable/ic_baseline_trending_up_24"
-        android:title="Trending" />
+        android:title="Trending" />-->
     <item
         android:id="@+id/searchBottom"
         android:icon="@drawable/ic_baseline_search_24"

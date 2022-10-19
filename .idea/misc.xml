@@ -20,6 +20,7 @@
         <entry key="..\:/Kryp70n/Kryp70n/movie-app-java-master/app/src/main/res/layout/movie_list.xml" value="0.17074275362318841" />
         <entry key="..\:/Kryp70n/Kryp70n/movie-app-java-master/app/src/main/res/menu/menu_bottom_navbar.xml" value="0.22" />
         <entry key="..\:/Kryp70n/Kryp70n/movie-app-java-master/app/src/main/res/xml/root_preferences.xml" value="0.25" />
+        <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/drawable/gradient.xml" value="0.205" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.205" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/drawable/ic_baseline_assignment_18.xml" value="0.225" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.225" />
@@ -31,6 +32,8 @@
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.225" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/drawable/ic_baseline_subtitles_24.xml" value="0.225" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/drawable/ic_icon.xml" value="0.1" />
+        <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/drawable/icon_rounded.xml" value="0.205" />
+        <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/drawable/style_status_anime.xml" value="0.205" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/activity_about.xml" value="0.21197916666666666" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/activity_anime_list.xml" value="0.33" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/activity_detail_anime.xml" value="0.25" />
@@ -41,14 +44,15 @@
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/custom_control.xml" value="0.33" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/custom_controls.xml" value="0.2621654501216545" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_bookmark.xml" value="0.22552083333333334" />
-        <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
+        <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_dashboard.xml" value="0.22" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_episodes.xml" value="0.22552083333333334" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_information.xml" value="0.33" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_jadwal.xml" value="0.22552083333333334" />
-        <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_search_anime.xml" value="0.25" />
+        <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_search_anime.xml" value="0.24644549763033174" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_setting.xml" value="0.22552083333333334" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/fragment_trending.xml" value="0.22552083333333334" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/item_anime_list.xml" value="0.22" />
+        <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/item_anime_list_v2.xml" value="0.33" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/item_bookmark.xml" value="0.33" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/item_episode_anime.xml" value="0.22552083333333334" />
         <entry key="..\:/Kryp70nNime/Kryp70n/movie-app-java-master/app/src/main/res/layout/layout_not_found.xml" value="0.11" />

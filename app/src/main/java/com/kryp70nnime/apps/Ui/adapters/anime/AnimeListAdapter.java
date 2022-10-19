@@ -16,7 +16,7 @@ import com.bumptech.glide.Glide;
 import com.derohimat.sweetalertdialog.SweetAlertDialog;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.kryp70nnime.apps.Ui.Activity.detail.DetailAnimeActivity;
-import com.kryp70nnime.apps.di.Interceptor.MainInterceptor;
+import com.kryp70nnime.apps.Di.Interceptor.MainInterceptor;
 import com.kryp70nnime.apps.R;
 import com.kryp70nnime.apps.Data.Remote.api.ApiService;
 import com.kryp70nnime.apps.Data.Remote.api.Constant;
@@ -39,10 +39,12 @@ public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.View
     InfoModel infoModel;
     TopAiringModel topAiringModel;
 
+    int size;
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_anime_list, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_anime_list_v2, parent, false);
         return new ViewHolder((ViewGroup) view);
     }
 
@@ -73,12 +75,12 @@ public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.View
                 .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        ImageView animeImage = holder.itemView.findViewById(R.id.animeImage);
-        TextView txtTitle = holder.itemView.findViewById(R.id.animeTitle);
-        TextView txtReleaseDate = holder.itemView.findViewById(R.id.releaseDateItem);
-        TextView txtSubOrDub = holder.itemView.findViewById(R.id.subOrDubItem);
-        TextView txtStatus = holder.itemView.findViewById(R.id.statusAnimeItem);
-        CardView animeCard = holder.itemView.findViewById(R.id.AnimeCardView);
+        ImageView animeImage = holder.itemView.findViewById(R.id.animeImage_v2);
+        TextView txtTitle = holder.itemView.findViewById(R.id.animeTitle_v2);
+        //TextView txtReleaseDate = holder.itemView.findViewById(R.id.releaseDateItem);
+        //TextView txtSubOrDub = holder.itemView.findViewById(R.id.subOrDubItem);
+        TextView txtStatus = holder.itemView.findViewById(R.id.animeStatus_v2);
+        CardView animeCard = holder.itemView.findViewById(R.id.animeCardView_v2);
         ShimmerFrameLayout shimmerFrameLayout = holder.itemView.findViewById(R.id.shimmerAnime);
 
 
@@ -95,20 +97,21 @@ public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.View
                 public void onResponse(Call<TopAiringModel> call, Response<TopAiringModel> response) {
                     if (response.isSuccessful()) {
                         topAiringModel = response.body();
-
+                        size = response.body().getResults().size();
                         apiService.getAnimeInfo(topAiringModel.getResults().get(position).getId())
                                 .enqueue(new Callback<InfoModel>() {
                                     @Override
                                     public void onResponse(Call<InfoModel> call, Response<InfoModel> responseInfo) {
                                         if (responseInfo.isSuccessful()) {
+
                                             infoModel = responseInfo.body();
                                             Glide.with(holder.itemView.getContext())
                                                     .load(topAiringModel.getResults().get(position).getImage())
                                                     .into(animeImage);
                                             txtTitle.setText(topAiringModel.getResults().get(position).getTitle());
-                                            txtReleaseDate.setText("Release Date : " + infoModel.getReleaseDate());
-                                            txtSubOrDub.setText("Sub or Dub : " + infoModel.getSubOrDub());
-                                            txtStatus.setText("Status : " + infoModel.getStatus());
+                                            // txtReleaseDate.setText("Release Date : " + infoModel.getReleaseDate());
+//                                            txtSubOrDub.setText("Sub or Dub : " + infoModel.getSubOrDub());
+                                            txtStatus.setText(infoModel.getStatus());
                                             animeCard.setOnClickListener(new View.OnClickListener() {
                                                 @Override
                                                 public void onClick(View view) {
@@ -148,29 +151,32 @@ public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.View
                     .load(topAiringModel.getResults().get(position).getImage())
                     .into(animeImage);
             txtTitle.setText(topAiringModel.getResults().get(position).getTitle());
-            if (infoModel.getReleaseDate() != null && infoModel.getSubOrDub() != null && infoModel.getStatus() != null) {
 
-                try {
-                    txtReleaseDate.setText("Release Date : " + infoModel.getReleaseDate());
-                    txtSubOrDub.setText("Sub or Dub : " + infoModel.getSubOrDub());
-                    txtStatus.setText("Status : " + infoModel.getStatus());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    SweetAlertDialog sweetAlertDialog = new SweetAlertDialog(holder.itemView.getContext(), SweetAlertDialog.ERROR_TYPE);
-                    sweetAlertDialog.setTitleText("ERROR");
-                    sweetAlertDialog.setContentText("Something went wrong, " + e.getMessage());
-                    sweetAlertDialog.setConfirmText("OK");
-                    sweetAlertDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
-                        @Override
-                        public void onClick(SweetAlertDialog sweetAlertDialog) {
-                            sweetAlertDialog.dismissWithAnimation();
-                        }
-                    });
-                    sweetAlertDialog.show();
+            try {
+                if (infoModel != null) {
+                    if (infoModel.getReleaseDate() != null && infoModel.getSubOrDub() != null && infoModel.getStatus() != null) {
+                    } else {
+
+                    }
+
+                    txtStatus.setText(infoModel.getStatus());
+
                 }
-            } else {
-
+            } catch (Exception e) {
+                e.printStackTrace();
+                SweetAlertDialog sweetAlertDialog = new SweetAlertDialog(holder.itemView.getContext(), SweetAlertDialog.ERROR_TYPE);
+                sweetAlertDialog.setTitleText("ERROR");
+                sweetAlertDialog.setContentText("Something went wrong, " + e.getMessage());
+                sweetAlertDialog.setConfirmText("OK");
+                sweetAlertDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        sweetAlertDialog.dismissWithAnimation();
+                    }
+                });
+                sweetAlertDialog.show();
             }
+
             animeCard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -187,7 +193,11 @@ public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.View
 
     @Override
     public int getItemCount() {
-        return 3;
+        if (size > 0) {
+            return size;
+        } else {
+            return 5;
+        }
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

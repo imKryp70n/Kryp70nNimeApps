@@ -42,22 +42,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginStart="50dp"
-                    android:visibility="gone"
                     android:layout_marginEnd="30dp"
                     android:background="@drawable/rounded_searchbar"
+                    android:visibility="gone"
                     app:queryHint="Search Movie" />
 
             </androidx.appcompat.widget.Toolbar>
+
 
 
             <TextView
                 android:id="@+id/trendingText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/toolbar"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="Top 3 Anime Trending"
+                android:text="Top Anime Trending"
                 android:textColor="@color/material_blue" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -67,26 +67,46 @@
                 android:layout_below="@+id/trendingText"
                 android:scrollbars="horizontal" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Recomended Anime"
+                android:textColor="@color/material_blue" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/animeListRecycler2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trendingText"
+                android:scrollbars="horizontal" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_height="wrap_content">
+                android:orientation="vertical"
+                android:visibility="gone">
+
                 <TextView
                     android:layout_width="match_parent"
-                    android:text="Announcement"
-                    android:textStyle="bold"
-                    android:textColor="@color/material_blue"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_medium"
-                    android:layout_height="wrap_content"/>
+                    android:text="Announcement"
+                    android:textColor="@color/material_blue"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="match_parent"
-                    android:text="Welcome to Kryp70nNime, this is the first app I made while I was in school. Sorry if you experience delays when fetching the list because I use free hosting for the API section :)"
-                    android:textColor="@color/black_bold_text"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
-                    android:layout_height="wrap_content"/>
+                    android:text="Welcome to Kryp70nNime, this is the first app I made while I was in school. Sorry if you experience delays when fetching the list because I use free hosting for the API section :)"
+                    android:textColor="@color/black_bold_text" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

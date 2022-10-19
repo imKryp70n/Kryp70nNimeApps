@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 
 import com.kryp70nnime.apps.R;
 import com.kryp70nnime.apps.Ui.adapters.anime.AnimeListAdapter;
+import com.kryp70nnime.apps.Ui.adapters.anime.AnimeRecentEpsAdapter;
 import com.kryp70nnime.apps.Ui.adapters.anime.AnimeSearchResultAdapter;
 import com.kryp70nnime.apps.Data.Remote.api.ApiService;
 import com.kryp70nnime.apps.Data.Remote.api.Constant;
@@ -27,11 +28,10 @@ import java.util.List;
 
 public class DashboardFragment extends Fragment {
     private RecyclerView recyclerView;
+    private RecyclerView recyclerView2;
     AnimeListAdapter animeListAdapter;
-    ApiService apiService;
-    List<ResultsItem> resultsItem;
-    SearchResponse searchResponse;
-    AnimeSearchResultAdapter animeSearchResultAdapter;
+    AnimeRecentEpsAdapter animeRecentEpsAdapter;
+
 
 
 
@@ -39,17 +39,25 @@ public class DashboardFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
-
-
         recyclerView = view.findViewById(R.id.animeListRecycler);
-        animeSearchResultAdapter = new AnimeSearchResultAdapter();
+        recyclerView2 = view.findViewById(R.id.animeListRecycler2);
+
         final FragmentManager fragmentManager = getFragmentManager();
         SearchView searchView = view.findViewById(R.id.searchViewAnime);
         animeListAdapter = new AnimeListAdapter();
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        animeRecentEpsAdapter = new AnimeRecentEpsAdapter();
+        // HORIZONTAL RECYCLER VIEW
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        // SMOOTH SCROLLING
+        recyclerView.setNestedScrollingEnabled(false);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.getLayoutManager().smoothScrollToPosition(recyclerView, new RecyclerView.State(), 5);
         recyclerView.setAdapter(animeListAdapter);
         recyclerView.setHorizontalScrollBarEnabled(true);
+
+        recyclerView2.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerView2.setAdapter(animeRecentEpsAdapter);
+        recyclerView2.setHorizontalScrollBarEnabled(true);
 
 
         // ---- SEARCH SOME ANIME ----

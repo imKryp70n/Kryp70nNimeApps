@@ -1,4 +1,4 @@
-package com.kryp70nnime.apps.di.TrackSelection;
+package com.kryp70nnime.apps.Di.TrackSelection;
 
 import android.app.Dialog;
 import android.content.DialogInterface;

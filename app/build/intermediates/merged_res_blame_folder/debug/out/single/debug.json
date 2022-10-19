@@ -4,6 +4,10 @@
         "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\drawable\\avatar_11.xml"
     },
     {
+        "merged": "com.kryp70nnime.apps.app-merged_res-65:/layout_fragment_search_anime.xml.flat",
+        "source": "com.kryp70nnime.apps.app-main-67:/layout/fragment_search_anime.xml"
+    },
+    {
         "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -34,6 +38,10 @@
     {
         "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\drawable_ic_baseline_collections_bookmark_24.xml.flat",
         "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\drawable\\ic_baseline_collections_bookmark_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\drawable_gradient.xml.flat",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\drawable\\gradient.xml"
     },
     {
         "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\layout_fragment_setting.xml.flat",
@@ -188,10 +196,6 @@
         "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\drawable\\avatar_10.xml"
     },
     {
-        "merged": "com.kryp70nnime.apps.app-merged_res-65:/layout_activity_watch_anime.xml.flat",
-        "source": "com.kryp70nnime.apps.app-main-67:/layout/activity_watch_anime.xml"
-    },
-    {
         "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\menu_navigation_drawer.xml.flat",
         "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\menu\\navigation_drawer.xml"
     },
@@ -308,6 +312,10 @@
         "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\drawable\\avatar_14.xml"
     },
     {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\layout_item_anime_list_v2.xml.flat",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\item_anime_list_v2.xml"
+    },
+    {
         "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\drawable_ic_baseline_arrow_back_24.xml.flat",
         "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\drawable\\ic_baseline_arrow_back_24.xml"
     },
@@ -326,6 +334,10 @@
     {
         "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\layout_activity_splash.xml.flat",
         "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\drawable_style_status_anime.xml.flat",
+        "source": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-main-67:\\drawable\\style_status_anime.xml"
     },
     {
         "merged": "C:\\Users\\AxxelXD\\.gradle\\daemon\\7.3.3\\com.kryp70nnime.apps.app-merged_res-65:\\drawable_ic_baseline_trending_up_24.xml.flat",

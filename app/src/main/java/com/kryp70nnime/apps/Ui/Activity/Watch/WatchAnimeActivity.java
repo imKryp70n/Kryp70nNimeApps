@@ -2,27 +2,21 @@ package com.kryp70nnime.apps.Ui.Activity.Watch;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.media.session.MediaControllerCompat;
-import android.support.v4.media.session.MediaSessionCompat;
-import android.support.v4.media.session.PlaybackStateCompat;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
+import android.view.ViewGroup;
 import android.webkit.CookieManager;
 import android.widget.ImageView;
-import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.derohimat.sweetalertdialog.SweetAlertDialog;
-import com.google.android.exoplayer2.ExoPlayer;
-import com.google.android.exoplayer2.PlaybackParameters;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.source.MediaSource;
@@ -31,29 +25,15 @@ import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
 import com.google.android.exoplayer2.ui.AspectRatioFrameLayout;
 import com.google.android.exoplayer2.ui.PlayerControlView;
 import com.google.android.exoplayer2.ui.PlayerView;
-import com.google.android.exoplayer2.ui.StyledPlayerView;
-import com.google.android.exoplayer2.ui.TrackSelectionView;
-import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.kryp70nnime.apps.R;
 import com.kryp70nnime.apps.Data.Remote.api.ApiService;
 import com.kryp70nnime.apps.Data.Remote.api.Constant;
 import com.kryp70nnime.apps.Data.Remote.models.AnimeEpisodeModels.AnimeEpisodeModel;
-import com.kryp70nnime.apps.di.TrackSelection.TrackSelectionDialog;
-import com.potyvideo.library.AndExoPlayerView;
+import com.kryp70nnime.apps.Di.TrackSelection.TrackSelectionDialog;
 
-import net.webilisim.webplayer.WEBPlayer;
 import net.webilisim.webplayer.WEBPlayerStd;
 
-import java.net.InetAddress;
-import java.util.HashMap;
-
-import butterknife.BindView;
-import okhttp3.Cache;
-import okhttp3.HttpUrl;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.dnsoverhttps.DnsOverHttps;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -146,12 +126,16 @@ public class WatchAnimeActivity extends AppCompatActivity {
                                         // code for portrait mode
                                         WatchAnimeActivity.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
                                         playerView.setResizeMode(AspectRatioFrameLayout.RESIZE_MODE_FILL);
+                                        playerView.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
                                         fullscreenButton.setImageResource(R.drawable.ic_baseline_fullscreen_exit_24);
 
                                     } else {
                                         // code for landscape mode
                                         WatchAnimeActivity.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
                                         playerView.setResizeMode(AspectRatioFrameLayout.RESIZE_MODE_FIT);
+                                        playerView.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200,
+                                                getApplicationContext().getResources().getDisplayMetrics());
+
                                         fullscreenButton.setImageResource(R.drawable.ic_baseline_fullscreen_24);
 
                                     }
@@ -205,6 +189,7 @@ public class WatchAnimeActivity extends AppCompatActivity {
                                         TrackSelectionDialog trackSelectionDialog = TrackSelectionDialog.createForTrackSelector(trackSelector,
                                                         /* onDismissListener= */ dismissedDialog -> isShowingTrackSelectionDialog = false);
                                         trackSelectionDialog.show(getSupportFragmentManager(), /* tag= */ null);
+
                                     }
                                 }
                             });
@@ -278,6 +263,8 @@ public class WatchAnimeActivity extends AppCompatActivity {
 
             WatchAnimeActivity.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             playerView.setResizeMode(AspectRatioFrameLayout.RESIZE_MODE_FIT);
+            playerView.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200,
+                    getApplicationContext().getResources().getDisplayMetrics());
         } else {
             super.onBackPressed();
         }

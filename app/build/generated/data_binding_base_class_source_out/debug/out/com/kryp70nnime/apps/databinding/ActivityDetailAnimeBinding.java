@@ -4,6 +4,7 @@ package com.kryp70nnime.apps.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -35,6 +36,9 @@ public final class ActivityDetailAnimeBinding implements ViewBinding {
   public final TextView animeTitleDetail;
 
   @NonNull
+  public final Button btnFavorite;
+
+  @NonNull
   public final ViewPager infoViewPager;
 
   @NonNull
@@ -51,13 +55,15 @@ public final class ActivityDetailAnimeBinding implements ViewBinding {
 
   private ActivityDetailAnimeBinding(@NonNull RelativeLayout rootView,
       @NonNull FrameLayout animeDetailFrame, @NonNull ImageView animeImage,
-      @NonNull TextView animeTitleDetail, @NonNull ViewPager infoViewPager,
-      @NonNull ScrollView scrollView, @NonNull ShimmerFrameLayout shimmerDescImage,
-      @NonNull ShimmerFrameLayout shimmerDescTitle, @NonNull TabLayout tabLayoutDetail) {
+      @NonNull TextView animeTitleDetail, @NonNull Button btnFavorite,
+      @NonNull ViewPager infoViewPager, @NonNull ScrollView scrollView,
+      @NonNull ShimmerFrameLayout shimmerDescImage, @NonNull ShimmerFrameLayout shimmerDescTitle,
+      @NonNull TabLayout tabLayoutDetail) {
     this.rootView = rootView;
     this.animeDetailFrame = animeDetailFrame;
     this.animeImage = animeImage;
     this.animeTitleDetail = animeTitleDetail;
+    this.btnFavorite = btnFavorite;
     this.infoViewPager = infoViewPager;
     this.scrollView = scrollView;
     this.shimmerDescImage = shimmerDescImage;
@@ -110,6 +116,12 @@ public final class ActivityDetailAnimeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_favorite;
+      Button btnFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (btnFavorite == null) {
+        break missingId;
+      }
+
       id = R.id.infoViewPager;
       ViewPager infoViewPager = ViewBindings.findChildViewById(rootView, id);
       if (infoViewPager == null) {
@@ -141,8 +153,8 @@ public final class ActivityDetailAnimeBinding implements ViewBinding {
       }
 
       return new ActivityDetailAnimeBinding((RelativeLayout) rootView, animeDetailFrame, animeImage,
-          animeTitleDetail, infoViewPager, scrollView, shimmerDescImage, shimmerDescTitle,
-          tabLayoutDetail);
+          animeTitleDetail, btnFavorite, infoViewPager, scrollView, shimmerDescImage,
+          shimmerDescTitle, tabLayoutDetail);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

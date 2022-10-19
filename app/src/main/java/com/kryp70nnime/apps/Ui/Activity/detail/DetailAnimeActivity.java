@@ -5,10 +5,14 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.derohimat.sweetalertdialog.SweetAlertDialog;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.android.material.tabs.TabLayout;
 import com.kryp70nnime.apps.Ui.Activity.detail.fragment.EpisodesFragment;
@@ -48,6 +52,8 @@ public class DetailAnimeActivity extends AppCompatActivity {
         TextView txtTitle = findViewById(R.id.animeTitleDetail);
         ShimmerFrameLayout shimmerFrameLayout = findViewById(R.id.shimmerDescImage);
         ShimmerFrameLayout shimmerFrameLayoutTitle = findViewById(R.id.shimmerDescTitle);
+        Button addToBookmark = findViewById(R.id.btn_favorite);
+
         String title = getIntent().getStringExtra("animeId");
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Constant.BASE_URL)
@@ -57,6 +63,35 @@ public class DetailAnimeActivity extends AppCompatActivity {
 
         shimmerFrameLayout.startShimmer();
         shimmerFrameLayoutTitle.startShimmer();
+
+        addToBookmark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SweetAlertDialog sweetAlertDialog = new SweetAlertDialog(DetailAnimeActivity.this, SweetAlertDialog.SUCCESS_TYPE);
+                sweetAlertDialog.setTitleText("Success");
+                sweetAlertDialog.setContentText("Anime " + Constant.AnimeName + " has been added to your bookmark");
+                sweetAlertDialog.show();
+
+                                /*
+                                editor.putString("animeId", Constant.AnimeID);
+                                editor.putString("animeName", Constant.AnimeName);
+                                editor.putString("URL", infoModel.getUrl());
+                                editor.apply();*/
+
+                // GET ALL DATA FROM SHARED PREFERENCES
+
+            }
+        });
+
+
+
+
+
+
+
+
+
+
         apiService = retrofit.create(ApiService.class);
         apiService.getAnimeInfo(title).enqueue(new Callback<InfoModel>() {
             @Override

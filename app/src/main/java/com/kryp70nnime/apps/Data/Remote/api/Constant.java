@@ -4,7 +4,7 @@ import okhttp3.HttpUrl;
 
 public class Constant {
 
-    public static final String BASE_URL = "https://kryp70nnime.herokuapp.com/";
+    public static final String BASE_URL = "https://api.consumet.org";
     public static final String DNS_URL = "https://security.cloudflare-dns.com/dns-query" ;
     public static String AnimeID;
     public static final String SaveAnime = "KEY_SAVEANIME";

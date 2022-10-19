@@ -49,7 +49,6 @@ public class InformationFragment extends Fragment {
         TextView txtReleaseDate = view.findViewById(R.id.releaseDateAnime);
         TextView txtStatus = view.findViewById(R.id.statusAnime);
         ShimmerFrameLayout shimmerFrameLayout = view.findViewById(R.id.shimmerDescInfo);
-        MaterialButton addToBookmark = view.findViewById(R.id.buttonFavorite);
         String title = getActivity().getIntent().getStringExtra("animeId");
         Constant.AnimeID = title;
 
@@ -83,25 +82,7 @@ public class InformationFragment extends Fragment {
                         Constant.ReleaseDate = infoModel.getReleaseDate();
                         shimmerFrameLayout.stopShimmer();
                         shimmerFrameLayout.hideShimmer();
-                        addToBookmark.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                SweetAlertDialog sweetAlertDialog = new SweetAlertDialog(getContext(), SweetAlertDialog.SUCCESS_TYPE);
-                                sweetAlertDialog.setTitleText("Success");
-                                sweetAlertDialog.setContentText("Anime " + Constant.AnimeName + " has been added to your bookmark");
-                                sweetAlertDialog.show();
 
-                                /*
-                                editor.putString("animeId", Constant.AnimeID);
-                                editor.putString("animeName", Constant.AnimeName);
-                                editor.putString("URL", infoModel.getUrl());
-                                editor.apply();*/
-
-                                // GET ALL DATA FROM SHARED PREFERENCES
-                                Log.d("Title", "onClick: " + sharedPreferences.getString("animeName", ""));
-
-                            }
-                        });
 
                     } else {
                         System.out.println("ERROR CODE: " + response.code());

@@ -11,7 +11,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.facebook.shimmer.ShimmerFrameLayout;
-import com.google.android.material.button.MaterialButton;
 import com.kryp70nnime.apps.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -34,9 +33,6 @@ public final class FragmentInformationBinding implements ViewBinding {
   public final TextView animeTotalEpsDetail;
 
   @NonNull
-  public final MaterialButton buttonFavorite;
-
-  @NonNull
   public final TextView releaseDateAnime;
 
   @NonNull
@@ -48,14 +44,13 @@ public final class FragmentInformationBinding implements ViewBinding {
   private FragmentInformationBinding(@NonNull FrameLayout rootView,
       @NonNull TextView animeGenreDetail, @NonNull TextView animeSynopsisDetail,
       @NonNull TextView animeTotalEps, @NonNull TextView animeTotalEpsDetail,
-      @NonNull MaterialButton buttonFavorite, @NonNull TextView releaseDateAnime,
-      @NonNull ShimmerFrameLayout shimmerDescInfo, @NonNull TextView statusAnime) {
+      @NonNull TextView releaseDateAnime, @NonNull ShimmerFrameLayout shimmerDescInfo,
+      @NonNull TextView statusAnime) {
     this.rootView = rootView;
     this.animeGenreDetail = animeGenreDetail;
     this.animeSynopsisDetail = animeSynopsisDetail;
     this.animeTotalEps = animeTotalEps;
     this.animeTotalEpsDetail = animeTotalEpsDetail;
-    this.buttonFavorite = buttonFavorite;
     this.releaseDateAnime = releaseDateAnime;
     this.shimmerDescInfo = shimmerDescInfo;
     this.statusAnime = statusAnime;
@@ -112,12 +107,6 @@ public final class FragmentInformationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.buttonFavorite;
-      MaterialButton buttonFavorite = ViewBindings.findChildViewById(rootView, id);
-      if (buttonFavorite == null) {
-        break missingId;
-      }
-
       id = R.id.releaseDateAnime;
       TextView releaseDateAnime = ViewBindings.findChildViewById(rootView, id);
       if (releaseDateAnime == null) {
@@ -137,7 +126,7 @@ public final class FragmentInformationBinding implements ViewBinding {
       }
 
       return new FragmentInformationBinding((FrameLayout) rootView, animeGenreDetail,
-          animeSynopsisDetail, animeTotalEps, animeTotalEpsDetail, buttonFavorite, releaseDateAnime,
+          animeSynopsisDetail, animeTotalEps, animeTotalEpsDetail, releaseDateAnime,
           shimmerDescInfo, statusAnime);
     }
     String missingId = rootView.getResources().getResourceName(id);

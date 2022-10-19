@@ -17,26 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="end">
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/buttonFavorite"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="Bookmark" />
-                </RelativeLayout>
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -48,16 +29,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Genre : "
-                    android:textColor="@color/black_bold_text" />
+                    android:text="Genre : " />
 
                 <TextView
                     android:id="@+id/animeGenreDetail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_medium"
-                    android:text=""
-                    android:textColor="@color/black_bold_text" />
+                    android:text="" />
 
             </LinearLayout>
 
@@ -72,16 +51,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Total Episode : "
-                    android:textColor="@color/black_bold_text" />
+                    android:text="Total Episode : " />
 
                 <TextView
                     android:id="@+id/animeTotalEps"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_medium"
-                    android:text=""
-                    android:textColor="@color/black_bold_text" />
+                    android:text="" />
 
             </LinearLayout>
 
@@ -95,16 +72,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Status : "
-                    android:textColor="@color/black_bold_text" />
+                    android:text="Status : " />
 
                 <TextView
                     android:id="@+id/statusAnime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_medium"
-                    android:text=""
-                    android:textColor="@color/black_bold_text" />
+                    android:text="" />
 
             </LinearLayout>
 
@@ -118,16 +93,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Release Date : "
-                    android:textColor="@color/black_bold_text" />
+                    android:text="Release Date : "/>
 
                 <TextView
                     android:id="@+id/releaseDateAnime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_medium"
-                    android:text=""
-                    android:textColor="@color/black_bold_text" />
+                    android:text="" />
 
             </LinearLayout>
 
@@ -142,8 +115,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Deskripsi"
-                    android:textColor="@color/black_bold_text" />
+                    android:text="Deskripsi" />
 
                 <TextView
                     android:id="@+id/animeSynopsisDetail"

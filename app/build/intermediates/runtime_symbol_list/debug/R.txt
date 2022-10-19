@@ -3203,6 +3203,7 @@ int drawable exo_styled_controls_vr 0x7f080133
 int drawable forward_icon 0x7f080134
 int drawable googleg_disabled_color_18 0x7f080135
 int drawable googleg_standard_color_18 0x7f080136
+int drawable gradient 0x7f08029d
 int drawable ic_arrow_down_24dp 0x7f080137
 int drawable ic_audiotrack_dark 0x7f080138
 int drawable ic_audiotrack_light 0x7f080139
@@ -3550,6 +3551,7 @@ int drawable shape_player_border 0x7f08028e
 int drawable shape_shadow 0x7f08028f
 int drawable shrink 0x7f080290
 int drawable side_nav_bar 0x7f080291
+int drawable style_status_anime 0x7f08029e
 int drawable success_bow 0x7f080292
 int drawable success_circle 0x7f080293
 int drawable test_custom_background 0x7f080294
@@ -3664,17 +3666,22 @@ int id androidx_window_activity_scope 0x7f0a005b
 int id animateToEnd 0x7f0a005c
 int id animateToStart 0x7f0a005d
 int id animation_view 0x7f0a005e
+int id animeCardView_v2 0x7f0a0371
 int id animeDetailFrame 0x7f0a005f
 int id animeGenreDetail 0x7f0a0060
 int id animeImage 0x7f0a0061
 int id animeImageBookmark 0x7f0a0062
+int id animeImage_v2 0x7f0a0372
 int id animeLinear 0x7f0a0063
 int id animeListRecycler 0x7f0a0064
+int id animeListRecycler2 0x7f0a0374
 int id animeSearchRecycler 0x7f0a0065
+int id animeStatus_v2 0x7f0a0375
 int id animeSynopsisDetail 0x7f0a0066
 int id animeTitle 0x7f0a0067
 int id animeTitleBookmark 0x7f0a0068
 int id animeTitleDetail 0x7f0a0069
+int id animeTitle_v2 0x7f0a0373
 int id animeTotalEps 0x7f0a006a
 int id animeTotalEpsDetail 0x7f0a006b
 int id animeTrendingRecycler 0x7f0a006c
@@ -3726,9 +3733,9 @@ int id browser_actions_menu_item_text 0x7f0a0099
 int id browser_actions_menu_items 0x7f0a009a
 int id browser_actions_menu_view 0x7f0a009b
 int id btn_Accept 0x7f0a009c
+int id btn_favorite 0x7f0a0370
 int id btn_ok 0x7f0a009d
 int id button 0x7f0a009e
-int id buttonFavorite 0x7f0a009f
 int id buttonPanel 0x7f0a00a0
 int id button_0 0x7f0a00a1
 int id button_1 0x7f0a00a2
@@ -4397,7 +4404,6 @@ int id transition_layout_save 0x7f0a0338
 int id transition_position 0x7f0a0339
 int id transition_scene_layoutid_cache 0x7f0a033a
 int id transition_transform 0x7f0a033b
-int id trendingBottom 0x7f0a033c
 int id trendingText 0x7f0a033d
 int id triangle 0x7f0a033e
 int id tv_brightness 0x7f0a033f
@@ -4417,6 +4423,7 @@ int id vertical 0x7f0a034c
 int id vertical_only 0x7f0a034d
 int id video_current_time 0x7f0a034e
 int id video_decoder_gl_surface_view 0x7f0a034f
+int id viewPager 0x7f0a0376
 int id view_offset_helper 0x7f0a0350
 int id view_transition 0x7f0a0351
 int id view_tree_lifecycle_owner 0x7f0a0352
@@ -4611,6 +4618,7 @@ int layout fragment_slideshow 0x7f0d0053
 int layout fragment_trending 0x7f0d0054
 int layout image_frame 0x7f0d0055
 int layout item_anime_list 0x7f0d0056
+int layout item_anime_list_v2 0x7f0d00dd
 int layout item_bookmark 0x7f0d0057
 int layout item_episode_anime 0x7f0d0058
 int layout layout_player_base 0x7f0d0059

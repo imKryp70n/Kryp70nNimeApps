@@ -56,7 +56,7 @@ public class SearchAnimeFragment extends Fragment {
         animeSearchResultAdapter = new AnimeSearchResultAdapter();
         animeRecentEpsAdapter = new AnimeRecentEpsAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(animeRecentEpsAdapter);
+        //recyclerView.setAdapter(animeRecentEpsAdapter);
         // ---- SEARCH SOME ANIME ----
 
 

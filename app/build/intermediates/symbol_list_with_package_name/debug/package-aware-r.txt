@@ -3204,6 +3204,7 @@ drawable exo_styled_controls_vr
 drawable forward_icon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable gradient
 drawable ic_arrow_down_24dp
 drawable ic_audiotrack_dark
 drawable ic_audiotrack_light
@@ -3551,6 +3552,7 @@ drawable shape_player_border
 drawable shape_shadow
 drawable shrink
 drawable side_nav_bar
+drawable style_status_anime
 drawable success_bow
 drawable success_circle
 drawable test_custom_background
@@ -3665,17 +3667,22 @@ id androidx_window_activity_scope
 id animateToEnd
 id animateToStart
 id animation_view
+id animeCardView_v2
 id animeDetailFrame
 id animeGenreDetail
 id animeImage
 id animeImageBookmark
+id animeImage_v2
 id animeLinear
 id animeListRecycler
+id animeListRecycler2
 id animeSearchRecycler
+id animeStatus_v2
 id animeSynopsisDetail
 id animeTitle
 id animeTitleBookmark
 id animeTitleDetail
+id animeTitle_v2
 id animeTotalEps
 id animeTotalEpsDetail
 id animeTrendingRecycler
@@ -3727,9 +3734,9 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_Accept
+id btn_favorite
 id btn_ok
 id button
-id buttonFavorite
 id buttonPanel
 id button_0
 id button_1
@@ -4398,7 +4405,6 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id trendingBottom
 id trendingText
 id triangle
 id tv_brightness
@@ -4418,6 +4424,7 @@ id vertical
 id vertical_only
 id video_current_time
 id video_decoder_gl_surface_view
+id viewPager
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -4612,6 +4619,7 @@ layout fragment_slideshow
 layout fragment_trending
 layout image_frame
 layout item_anime_list
+layout item_anime_list_v2
 layout item_bookmark
 layout item_episode_anime
 layout layout_player_base

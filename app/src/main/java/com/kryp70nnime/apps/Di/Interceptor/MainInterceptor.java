@@ -1,4 +1,4 @@
-package com.kryp70nnime.apps.di.Interceptor;
+package com.kryp70nnime.apps.Di.Interceptor;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

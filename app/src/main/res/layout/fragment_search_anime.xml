@@ -33,18 +33,17 @@
                 android:textColor="@color/material_blue"
                 android:textSize="18sp" />
 
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/searchViewAnime"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/rounded_searchbar"
-                app:queryHint="Search Movie" />
+
 
         </androidx.appcompat.widget.Toolbar>
 
-
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchViewAnime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_searchbar"
+            app:queryHint="Search something" />
         <TextView
             android:id="@+id/txtRecent"
             android:layout_width="match_parent"
@@ -53,6 +52,7 @@
             android:layout_marginStart="10dp"
             android:fontFamily="@font/poppins_semi_bold"
             android:text="Recomended Anime"
+            android:visibility="gone"
             android:textColor="@color/material_blue" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -60,7 +60,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/trendingText"
-            android:layout_marginTop="20dp"
             android:scrollbars="horizontal" />
 
         <LinearLayout

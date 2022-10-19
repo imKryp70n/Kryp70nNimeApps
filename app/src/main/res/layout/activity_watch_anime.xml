@@ -25,7 +25,8 @@
             app:played_color="@color/material_blue"
             app:show_buffering="when_playing"
             app:controller_layout_id="@layout/custom_control"
-            android:layout_height="wrap_content"/>
+            android:layout_height="200dp"/>
+
 
         <LinearLayout
             android:id="@+id/animeLinear"

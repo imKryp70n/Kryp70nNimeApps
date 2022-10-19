@@ -27,6 +27,9 @@ public final class FragmentDashboardBinding implements ViewBinding {
   public final RecyclerView animeListRecycler;
 
   @NonNull
+  public final RecyclerView animeListRecycler2;
+
+  @NonNull
   public final LinearLayout relativeLayout;
 
   @NonNull
@@ -39,11 +42,12 @@ public final class FragmentDashboardBinding implements ViewBinding {
   public final TextView trendingText;
 
   private FragmentDashboardBinding(@NonNull FrameLayout rootView,
-      @NonNull RecyclerView animeListRecycler, @NonNull LinearLayout relativeLayout,
-      @NonNull SearchView searchViewAnime, @NonNull Toolbar toolbar,
-      @NonNull TextView trendingText) {
+      @NonNull RecyclerView animeListRecycler, @NonNull RecyclerView animeListRecycler2,
+      @NonNull LinearLayout relativeLayout, @NonNull SearchView searchViewAnime,
+      @NonNull Toolbar toolbar, @NonNull TextView trendingText) {
     this.rootView = rootView;
     this.animeListRecycler = animeListRecycler;
+    this.animeListRecycler2 = animeListRecycler2;
     this.relativeLayout = relativeLayout;
     this.searchViewAnime = searchViewAnime;
     this.toolbar = toolbar;
@@ -83,6 +87,12 @@ public final class FragmentDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.animeListRecycler2;
+      RecyclerView animeListRecycler2 = ViewBindings.findChildViewById(rootView, id);
+      if (animeListRecycler2 == null) {
+        break missingId;
+      }
+
       id = R.id.relativeLayout;
       LinearLayout relativeLayout = ViewBindings.findChildViewById(rootView, id);
       if (relativeLayout == null) {
@@ -107,8 +117,8 @@ public final class FragmentDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentDashboardBinding((FrameLayout) rootView, animeListRecycler, relativeLayout,
-          searchViewAnime, toolbar, trendingText);
+      return new FragmentDashboardBinding((FrameLayout) rootView, animeListRecycler,
+          animeListRecycler2, relativeLayout, searchViewAnime, toolbar, trendingText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

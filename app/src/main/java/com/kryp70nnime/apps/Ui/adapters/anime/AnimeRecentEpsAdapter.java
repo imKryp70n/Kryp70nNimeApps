@@ -34,14 +34,13 @@ public class AnimeRecentEpsAdapter extends RecyclerView.Adapter<AnimeRecentEpsAd
 
     ApiService apiService;
     InfoModel infoModel;
-    TopAiringModel topAiringModel;
     RecentEpisodeModel recentEpisodeModel;
 
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_anime_list, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_anime_list_v2, parent, false);
         return new ViewHolder((ViewGroup) view);
     }
 
@@ -49,12 +48,12 @@ public class AnimeRecentEpsAdapter extends RecyclerView.Adapter<AnimeRecentEpsAd
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
-        ImageView animeImage = holder.itemView.findViewById(R.id.animeImage);
-        TextView txtTitle = holder.itemView.findViewById(R.id.animeTitle);
+        ImageView animeImage = holder.itemView.findViewById(R.id.animeImage_v2);
+        TextView txtTitle = holder.itemView.findViewById(R.id.animeTitle_v2);
         TextView txtReleaseDate = holder.itemView.findViewById(R.id.releaseDateItem);
         TextView txtSubOrDub = holder.itemView.findViewById(R.id.subOrDubItem);
-        TextView txtStatus = holder.itemView.findViewById(R.id.statusAnimeItem);
-        CardView animeCard = holder.itemView.findViewById(R.id.AnimeCardView);
+        TextView txtStatus = holder.itemView.findViewById(R.id.animeStatus_v2);
+        CardView animeCard = holder.itemView.findViewById(R.id.animeCardView_v2);
         ShimmerFrameLayout shimmerFrameLayout = holder.itemView.findViewById(R.id.shimmerAnime);
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Constant.BASE_URL)
@@ -82,9 +81,9 @@ public class AnimeRecentEpsAdapter extends RecyclerView.Adapter<AnimeRecentEpsAd
                                                     .load(recentEpisodeModel.getResults().get(position).getImage())
                                                     .into(animeImage);
                                             txtTitle.setText(recentEpisodeModel.getResults().get(position).getTitle());
-                                            txtReleaseDate.setText("Release Date : " + infoModel.getReleaseDate());
-                                            txtSubOrDub.setText("Sub or Dub : " + infoModel.getSubOrDub());
-                                            txtStatus.setText("Status : " + infoModel.getStatus());
+//                                            txtReleaseDate.setText("Release Date : " + infoModel.getReleaseDate());
+//                                            txtSubOrDub.setText("Sub or Dub : " + infoModel.getSubOrDub());
+                                            txtStatus.setText(infoModel.getStatus());
                                             animeCard.setOnClickListener(new View.OnClickListener() {
                                                 @Override
                                                 public void onClick(View view) {
@@ -124,29 +123,35 @@ public class AnimeRecentEpsAdapter extends RecyclerView.Adapter<AnimeRecentEpsAd
                     .load(recentEpisodeModel.getResults().get(position).getImage())
                     .into(animeImage);
             txtTitle.setText(recentEpisodeModel.getResults().get(position).getTitle());
-            if (infoModel.getReleaseDate() != null && infoModel.getSubOrDub() != null && infoModel.getStatus() != null) {
 
-                try {
-                    txtReleaseDate.setText("Release Date : " + infoModel.getReleaseDate());
-                    txtSubOrDub.setText("Sub or Dub : " + infoModel.getSubOrDub());
-                    txtStatus.setText("Status : " + infoModel.getStatus());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    SweetAlertDialog sweetAlertDialog = new SweetAlertDialog(holder.itemView.getContext(), SweetAlertDialog.ERROR_TYPE);
-                    sweetAlertDialog.setTitleText("ERROR");
-                    sweetAlertDialog.setContentText("Something went wrong, " + e.getMessage());
-                    sweetAlertDialog.setConfirmText("OK");
-                    sweetAlertDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
-                        @Override
-                        public void onClick(SweetAlertDialog sweetAlertDialog) {
-                            sweetAlertDialog.dismissWithAnimation();
-                        }
-                    });
-                    sweetAlertDialog.show();
+            try {
+                if (infoModel != null) {
+                    if (infoModel.getReleaseDate() != null && infoModel.getSubOrDub() != null && infoModel.getStatus() != null) {
+                    } else {
+
+                    }
+
+                    txtStatus.setText(infoModel.getStatus());
+
                 }
-            } else {
+/*                    txtReleaseDate.setText("Release Date : " + infoModel.getReleaseDate());
+                    txtSubOrDub.setText("Sub or Dub : " + infoModel.getSubOrDub());*/
 
+            } catch (Exception e) {
+                e.printStackTrace();
+                SweetAlertDialog sweetAlertDialog = new SweetAlertDialog(holder.itemView.getContext(), SweetAlertDialog.ERROR_TYPE);
+                sweetAlertDialog.setTitleText("ERROR");
+                sweetAlertDialog.setContentText("Something went wrong, " + e.getMessage());
+                sweetAlertDialog.setConfirmText("OK");
+                sweetAlertDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        sweetAlertDialog.dismissWithAnimation();
+                    }
+                });
+                sweetAlertDialog.show();
             }
+
             animeCard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

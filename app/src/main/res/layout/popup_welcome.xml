@@ -40,7 +40,6 @@
                     android:fontFamily="@font/poppins_medium"
                     android:gravity="center"
                     android:text="@string/read_terms"
-                    android:textColor="@color/black_bold_text"
                     android:textSize="13sp" />
 
 

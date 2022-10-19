@@ -10,7 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.ismaeldivita.chipnavigation.ChipNavigationBar;
+import androidx.viewpager.widget.ViewPager;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.kryp70nnime.apps.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,16 +22,21 @@ public final class ActivityAnimeListBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ChipNavigationBar bottomNavbar;
+  public final BottomNavigationView bottomNavbar;
 
   @NonNull
   public final FrameLayout dashboardContainer;
 
+  @NonNull
+  public final ViewPager viewPager;
+
   private ActivityAnimeListBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ChipNavigationBar bottomNavbar, @NonNull FrameLayout dashboardContainer) {
+      @NonNull BottomNavigationView bottomNavbar, @NonNull FrameLayout dashboardContainer,
+      @NonNull ViewPager viewPager) {
     this.rootView = rootView;
     this.bottomNavbar = bottomNavbar;
     this.dashboardContainer = dashboardContainer;
+    this.viewPager = viewPager;
   }
 
   @Override
@@ -61,7 +67,7 @@ public final class ActivityAnimeListBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.bottomNavbar;
-      ChipNavigationBar bottomNavbar = ViewBindings.findChildViewById(rootView, id);
+      BottomNavigationView bottomNavbar = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavbar == null) {
         break missingId;
       }
@@ -72,8 +78,14 @@ public final class ActivityAnimeListBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.viewPager;
+      ViewPager viewPager = ViewBindings.findChildViewById(rootView, id);
+      if (viewPager == null) {
+        break missingId;
+      }
+
       return new ActivityAnimeListBinding((ConstraintLayout) rootView, bottomNavbar,
-          dashboardContainer);
+          dashboardContainer, viewPager);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
