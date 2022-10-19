@@ -253,6 +253,8 @@ public class DashboardActivity extends AppCompatActivity {
     private class ViewPagerAdapter extends FragmentStatePagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
 
+
+
         public ViewPagerAdapter(FragmentManager manager) {
             super(manager);
         }
